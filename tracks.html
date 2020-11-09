@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracks</title>
+    <link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="tacks.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</head>
+
+<body  >
+   <!-----------------------------------------------------navbar------------------------------------------------->
+   <section>
+    <nav class="navbar navbar-expand-lg navbar nav1">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" class="img-responsive" style="width: 2rem;" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"  >
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+            <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z"/>
+            <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
+          </svg>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+          
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-dark-success my-2 my-sm-0" type="submit"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+              </svg></button>
+          </form>
+         
+          <ul class="navbar-nav ml-auto  ">
+            <li class="nav-item active" >
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Music
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="tracks.html">Tracks</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="albums.html">Albums</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="artists.html">Artists</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="partner.html">Patner</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+               <!-------------------------sign up--------------------->
+               <li>
+                <div class="container">
+            
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal" style="margin-top: 5px;">Sign up</button>
+              
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 > Create account</h4>
+                        <button type="button" class="close" data-dismiss="modal"  >&times;</button>
+                      
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                        
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                                <br>
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                             
+                           <br>
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="Email">
+                                </div>
+                                <br>
+                                <div class="col">
+                                  <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                             
+                          </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger btn-sm " data-dismiss="modal">Sign up</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </li>
+      <!---------------------- sign in-------------------------->        
+           
+           <!------ Button trigger modal------------->
+           <li>
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#staticBackdrop" style="margin-top: 5px;">
+Sign in
+</button>
+
+<!-- --------------------------Modal --------------------------------------->
+
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel" >Welcome back!!!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-row">
+         
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Email">
+          </div>
+          <div class="col">
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Sign in</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+    </li>
+  </ul>
+    </div>
+      </nav>
+    </section>
+
+<!-------------------------------------h1-------------------------------------------------->
+   
+<section id="tracks-h1">
+
+
+<div class="container h-100" >
+    <div class="d-flex justify-items-center text-center">
+      <div class="w-100 mt-3">
+        <h1 class="text-sm-center" id="track" >𝔗𝔯𝔞𝔠𝑘𝔰</h1>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+ 
+
+<!------------------------------------------icons------------------------------------------------->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   <!-- The social media icon bar -->
+   <div class="icon">
+     <a href="https://www.facebook.com/kalb.kbirfesed" class="facebook"><i class="fa fa-facebook"></i></a>
+     <a href="https://mail.google.com/mail/u/0/#inbox" class="google"><i class="fa fa-google"></i></a>
+     <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+     
+   </div> 
+  
+</section>
+
+ <!------------------------------------tracks----------------------------------------------->
+
+
+ <section  id="section-track">
+
+  <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+           <br>
+         <div class="container h-100">
+          <div class="d-flex justify-items-center text-center">
+            <div class="row" > 
+          <div class="w-100 ">
+         <div class="col-md-12">
+       <form class="form-inline mr-auto" >
+       <input class="form-control " type="text" placeholder="Search" aria-label="Search" id="search" >
+       <button type="submit" class="btn btn-danger btn-sm " id="search-button" ><i class="fa fa-search"></i></button>   </form>
+ 
+                              <!----------------------buttons------------------------->
+ 
+ <br>                  
+ <br>
+ <br>
+ <a href="tracks.html" class="btn btn-primary btn-rounded btn-lg my-0 m-6" role="button" aria-pressed="true">
+   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-soundwave" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z"/>
+</svg> 𝔗𝔯𝔞𝔠𝑘𝔰</a><br>
+ <br>
+ <br>
+ <br>
+ <a href="albums.html" class="btn btn-primary btn-rounded btn-lg my-0 m-6" role="button" aria-pressed="true"> 
+   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-files" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M4 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4z"/>
+  <path d="M6 0h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1H4a2 2 0 0 1 2-2z"/>
+</svg>𝔄𝔩𝔟𝔲𝔪𝔰</a><br>
+ <br>
+ <br>
+ <br>
+ <a href="artists.html" class="btn btn-primary btn-rounded btn-lg my-0 m-6" role="button" aria-pressed="true"> 
+   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>𝔄𝔯𝔱𝔦𝔰𝔱𝔰</a><br>
+ 
+ <!--------------------------------------------------filter--------------------------------------------------->
+ 
+ <br><br><br><br><br><br>
+ <h1 class="text-center" id="filter-title">𝔉𝔦𝔩𝔱𝔢𝔯 𝓡𝔢𝔰𝔲𝔩𝔱𝔰</h1>
+ <br><br>
+ 
+
+
+
+ <div class="dropdown">
+  <a class="dropbtn">
+ <p id="add"> <a href="" class="text-white "><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"/>
+  <path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+</svg> 𝑨𝒅𝒅 𝒃𝒚 𝒕𝒊𝒎𝒆 </a></p>
+</a>
+<div class="dropdown-content">
+  <a href="#"> 2 min</a>
+  <a href="#"> 2-10 min</a>
+  <a href="#">10-30 min</a>
+  <a href="#">30-60 min</a>
+  </div>
+</div>
+
+
+
+
+
+<div class="dropdown">
+  <a class="dropbtn">
+ <p id="add" > <a href="" class="text-white "> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+</svg> 𝑨𝒅𝒅 𝒃𝒚 𝒅𝒂𝒕𝒆 </a></p>
+</a>
+<div class="dropdown-content">
+  <a href="#">Past hour</a>
+  <a href="#">Past day</a>
+  <a href="#">Past week</a>
+  <a href="#">Past month</a>
+
+  </div>
+</div>
+ 
+ 
+                   </div>
+                 </div>
+               </div>
+             </div>
+              </div>
+             </div>
+              <div class="col-md-1"> 
+             </div>
+             <div class="vl"></div>
+              <div class="col-md-3"> 
+              
+               <div class="container h-100" >
+               <div class="d-flex justify-items-center text-center">
+                 <div class="row" > 
+                 <div class="w-100 ">
+                   <div class="col-md-12 fixed" style="margin-top: 40px;">
+                     <img src="Tracks/img/byby.jpg"class="img-fluid rounded mx-auto d-block" alt="Responsive image"  style="width: 10rem;height: 10rem; ">
+                  
+                     <P >𝕯𝖆𝖇𝖆𝖇𝖞-𝖘𝖚𝖌𝖊</P>
+ 
+                       <audio controls  src="Tracks/Da Baby - Next Song (Instrumental).mp3" style="background-color: black;"  ></audio>
+                         <source src="sample.mp3">
+                       </audio>
+                       
+                     
+                      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="love-icon" >
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                      </svg>
+
+                      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cloud-arrow-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="down-icon" >
+                        <path fill-rule="evenodd" d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                        <path fill-rule="evenodd" d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z"/>
+                      </svg>
+
+                      <button type="button" class="btn btn-danger btn-sm" id="button-track">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-up-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
+                          <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                          <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                        
+                        </svg> Share</button>
+                    <br><br><br>
+                   
+                    
+                  <img src="Tracks/img/nba.png"class="img-fluid rounded mx-auto d-block" alt="Responsive image"  style="width: 10rem;height: 10rem;">
+                
+                     <P  class="mt-1">𝕽𝖎𝖈𝖍 𝖙𝖍𝖊 𝖐𝖎𝖉-𝖕𝖑𝖚𝖌</P>
+ 
+                      
+                     <audio controls  src="Tracks/Plug Walk Instrumental (Best Version).mp3"  ></audio>
+                     <source src="sample.mp3">
+                   </audio>
+                   <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="love-icon" >
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+
+                  <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cloud-arrow-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="down-icon" >
+                    <path fill-rule="evenodd" d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                    <path fill-rule="evenodd" d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z"/>
+                  </svg>
+
+                  <button type="button" class="btn btn-danger btn-sm" id="button-track">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-up-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
+                      <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                      <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                    
+                    </svg> Share</button>
+                <br><br><br>
+               
+               
+                 <img src="Tracks/img/bonk.jpg" class="img-fluid rounded mx-auto d-block" alt="Responsive image"  style="width: 10rem;height: 10rem;  ;">
+            
+                 <P  class="mt-1">𝖄𝕲 - 𝕺𝖚𝖙 𝕺𝖓 𝕭𝖆𝖎𝖑 </P>
+ 
+                  
+                 <audio controls  src="Tracks/DaBaby - Practice (Official Audio).mp3"  ></audio>
+                 <source src="sample.mp3">
+               </audio>
+               <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="love-icon" >
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+              </svg>
+
+              <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cloud-arrow-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="down-icon" >
+                <path fill-rule="evenodd" d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                <path fill-rule="evenodd" d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z"/>
+              </svg>
+
+              <button type="button" class="btn btn-danger btn-sm" id="button-track">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-up-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
+                  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                
+                </svg> Share</button>
+            <br><br><br>
+     
+          
+       
+           </div>
+         </div>
+     </div>
+     </div>
+       </div>
+           </div> 
+              </div>
+    
+         </div>
+              </div>
+          </div>
+      </div>
+ 
+ 
+
+ </section>
+ 
+ <!-------------------------------------------pagination-------------------------------------->
+
+
+
+ <footer id="footer"> 
+
+  <nav aria-label="...">
+    <ul class="pagination center" style="margin-left: 45vw; ">
+      
+      <li class="page-item"><a class="page-link" href="tracks.html">1</a></li>
+      
+      <li class="page-item"><a class="page-link" href="albums.html">2</a></li>
+  
+     
+      <li class="page-item"><a class="page-link" href="artists.html">3</a></li>
+     
+    </ul>
+<!----------------------------------footer-------------------------------------------->
+
+<footer id="footer"> 
+ 
+    
+    
+  
+   <div class="container" >
+    <div class="col-md-12 lg ">
+      <div class="row" >
+        <div class="col-md-4"> <img src="img/logo.png"class="img-responsive" id="logof" ></div>
+        
+        <div class="col-md-4" >
+         
+  
+          <p class="text-center" id="copy-right" > 𝓒𝔬𝔭𝑦-𝔯𝔦𝔤𝔥𝔱 </p>
+          <p class="text-center mt-4 mr-3" id="date-copy">𝟸𝟶𝟸𝟶-𝟸𝟶𝟷𝟿</p>
+
+                </div>
+        
+        <div class="col-md-4 ly5" id="info"  > 
+          <h2 class="text-center"> ＮａｓｓＴｒｉｐ  </h2>
+         <br>
+         
+          <p class="text-center">  
+            On NassTrip to connect  
+            with fans,  share  <p class="text-center"> your sounds, and grow your 
+            audience. </p> <p class="text-center"> What are you waiting for?.</p> <p class="text-center" > localisation/tunisia</p>
+          <p class="text-center">   TEL:9371083.</p>
+           
+       
+      </footer>
+             <!-----------------------------------------------------social media sidebar--------------------------------------->
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <!-- The social media icon bar -->
+    <div id="icon">
+      <a href="https://www.facebook.com/kalb.kbirfesed" class="facebook"><i class="fa fa-facebook"></i></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox" class="google"><i class="fa fa-google"></i></a>
+      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      
+    </div> 
+            
+      
+        </div>
+      
+  
+  
+  
+           
+   
+
+  
+  
+</body>
+</html>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

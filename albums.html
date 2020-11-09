@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums</title>
+    <link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="albums.css">
+
+
+</head>
+
+<body >
+   <!-----------------------------------------------------navbar------------------------------------------------->
+   <section>
+    <nav class="navbar navbar-expand-lg navbar nav1">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" class="img-responsive" style="width: 2rem;" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"  >
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+            <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z"/>
+            <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
+          </svg>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+          
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-dark-success my-2 my-sm-0" type="submit"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+              </svg></button>
+          </form>
+         
+          <ul class="navbar-nav ml-auto  ">
+            <li class="nav-item active" >
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Music
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="tracks.html">Tracks</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="albums.html">Albums</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="artists.html">Artists</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="partner.html">Patner</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+               <!-------------------------sign up--------------------->
+               <li>
+                <div class="container">
+            
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal" style="margin-top: 5px;">Sign up</button>
+              
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 > Create account</h4>
+                        <button type="button" class="close" data-dismiss="modal"  >&times;</button>
+                      
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                        
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                                <br>
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                             
+                           <br>
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="Email">
+                                </div>
+                                <br>
+                                <div class="col">
+                                  <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                             
+                          </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger btn-sm " data-dismiss="modal">Sign up</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </li>
+      <!---------------------- sign in-------------------------->        
+           
+           <!------ Button trigger modal------------->
+           <li>
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#staticBackdrop" style="margin-top: 5px;">
+Sign in
+</button>
+
+<!-- --------------------------Modal --------------------------------------->
+
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel" >Welcome back!!!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-row">
+         
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Email">
+          </div>
+          <div class="col">
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Sign in</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+    </li>
+  </ul>
+    </div>
+      </nav>
+    </section>
+
+
+
+    <!-------------------------------------h1-------------------------------------------------->
+   
+   <section  >
+
+<div class="container h-100">
+    <div class="d-flex justify-items-center text-center">
+      <div class="w-100 mt-3">
+        <h1 class="text-sm-center" id="track" >𝔄𝔩𝔟𝔲𝔪𝔰</h1>
+     
+     
+       
+      </div>
+    </div>
+  </div>
+
+
+
+<!------------------------------------------icons------------------------------------------------->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   <!-- The social media icon bar -->
+   <div class="icon">
+     <a href="https://www.facebook.com/kalb.kbirfesed" class="facebook"><i class="fa fa-facebook"></i></a>
+     <a href="https://mail.google.com/mail/u/0/#inbox" class="google"><i class="fa fa-google"></i></a>
+     <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+     
+   </div> 
+  
+
+</section>
+  <section style="background-color: black;">
+
+  <p id="trending" class="text-center">𝒕𝒓𝒆𝒏𝒅𝒊𝒏𝒈 𝒂𝒍𝒃𝒖𝒎𝒔 </p>
+
+
+ 
+
+<!-------------------------------------------first trending albums--------------------------------------------->
+
+<br>
+
+<div class="row" style="display: flex;justify-content: center;">
+    <div class="column">
+      <img src="albums/2chnz.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" id="trending-image">
+    </div>
+    <div class="column">
+      <img src="albums/school.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"  id="trending-image">
+    </div>
+    <div class="column">
+      <img src="albums/stitches.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"  id="trending-image">
+    </div>
+    <div class="column">
+      <img src="albums/meek.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" id="trending-image" >
+    </div>
+  </div>
+  <br>
+  <p class="text-center" style="color: rgb(255, 255, 255); " >𝑁𝑢𝑚𝑏𝑒𝑟 𝑜𝑛𝑒 𝑜𝑛 𝑏𝑖𝑙𝑙𝑏𝑜𝑎𝑟𝑑</p>
+<br>
+
+
+<!---------------------------------------------first albums------------------------------------------------>
+
+<div class="container h-100" id="con">
+    <div class="col-md-12">
+      <div class="row">
+      <div class=" col-md-3  col-sm 12 d-flex justify-items-center text-center">
+        <div class="w-100 mt-5">
+          
+         <img src="albums/rocky.png"class="img-fluid rounded mx-auto d-block" alt="Avatar" class="image" alt="Responsive image"  id="album-image" >
+         <div class="overlay">
+            <div class="text">𝕬𝖘𝖆𝖕 𝖗𝖔𝖈𝖐𝖞 𝖋𝖑𝖔𝖈𝖐𝖆</div>
+          </div>
+ 
+        </div>
+      </div>
+        <div class="col-md-3 col-sm 12 d-flex justify-items-center text-center">
+          <div class="w-100 mt-5">
+          <img src="albums/dax.jpg" class="img-fluid rounded mx-auto d-block" alt="Responsive image" id="album-image">
+    
+          <div class="overlay">
+            <div class="text">𝕯𝖆𝖝-𝖛𝖎𝖘𝖎𝖔𝖓</div>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3 col-sm 12 d-flex justify-items-center text-center">
+          <div class="w-100 mt-5">
+          <img src="albums/kid.webp"class="img-fluid rounded mx-auto d-block" alt="Responsive image" id="album-image">
+    
+          <div class="overlay">
+            <div class="text">𝕽𝖎𝖈𝖍 𝖙𝖍𝖊 𝕶𝖎𝖉-𝖕𝖑𝖚𝖌</div>
+          </div>            
+        </div>
+        </div>
+        <div class="col-md-3 col-sm 12 d-flex justify-items-center text-center">
+          <div class="w-100 mt-5">
+          <img src="albums/ross.webp" class="img-fluid rounded mx-auto d-block" alt="Responsive image" id="album-image">
+    
+          <div class="overlay">
+            <div class="text">𝕽𝖎𝖈𝖐 𝕽𝖔𝖘𝖘-𝖘𝖙𝖆𝖓</div>
+          </div>        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!------------------------------------------------albums2------------------------------->
+    
+    
+    
+    
+    <div class="container h-100">
+      <div class="col-md-12">
+        <div class="row">
+        <div class=" col-md-3  col-sm 12 d-flex justify-items-center text-center">
+          <div class="w-100 mt-5">
+           <img src="albums/kodack.jpg" class="img-fluid rounded mx-auto d-block" alt="Responsive image" style="width: 15rem;height: 15rem;">
+           <div class="overlay">
+            <div class="text"> 𝕶𝖔𝖉𝖆𝖐 𝖇𝖑𝖆𝖈𝖐- 𝖍𝖊𝖆𝖗𝖙</div>
+          </div>                  
+          </div>
+        </div>
+          <div class="col-md-3 col-sm 12 d-flex justify-items-center text-center">
+            <div class="w-100 mt-5">
+            <img src="albums/big.jpg" class="img-fluid rounded mx-auto d-block" alt="Responsive image" style="width: 15rem;height: 15rem;">
+      
+            <div class="overlay" >
+                <div class="text">𝕭𝖎𝖌 𝖘𝖊𝖆𝖓-𝕻𝖗𝖔𝖛𝖊</div>
+              </div>                      
+          </div>
+          </div>
+          <div class="col-md-3 col-sm 12 d-flex justify-items-center text-center">
+            <div class="w-100 mt-5">
+            <img src="albums/PNB.jpg" class="img-fluid rounded mx-auto d-block"  alt="Responsive image" style="width: 15rem;height: 15rem;">
+      
+            <div class="overlay">
+                <div class="text">𝕻𝖓𝕭 𝕽𝖔𝖈𝖐-𝕴𝕮𝕰</div>
+              </div>                    
+          </div>
+          </div>
+          <div class="col-md-3 col-sm 12 d-flex justify-items-center text-center">
+            <div class="w-100 mt-5">
+            <img src="albums/bag.png"class="img-fluid rounded mx-auto d-block" alt="Responsive image" style="width: 15rem;height: 15rem;">
+      
+            <div class="overlay">
+                <div class="text">𝕸𝖔𝖓𝖊𝖞𝖇𝖆𝖌-𝖋𝖑𝖊𝖝</div>
+              </div>                    
+          </div>                
+          </div>
+          </div>
+      </div>
+      </div>
+      </div>
+
+
+<br><br>
+</section>
+<!-------------------------------------------pagination-------------------------------------->
+
+
+
+<footer id="footer"> 
+
+  <nav aria-label="...">
+    <ul class="pagination center" style="margin-left: 45vw; ">
+      
+      <li class="page-item"><a class="page-link" href="tracks.html">1</a></li>
+      
+      <li class="page-item"><a class="page-link" href="albums.html">2</a></li>
+  
+     
+      <li class="page-item"><a class="page-link" href="artists.html">3</a></li>
+     
+    </ul>
+<!----------------------------------footer-------------------------------------------->
+
+<footer id="footer"> 
+ 
+    
+    
+  
+   <div class="container" >
+    <div class="col-md-12 lg ">
+      <div class="row" >
+        <div class="col-md-4"> <img src="img/logo.png"class="img-responsive" id="logof" ></div>
+        
+        <div class="col-md-4" >
+         
+  
+          <p class="text-center" id="copy-right" > 𝓒𝔬𝔭𝑦-𝔯𝔦𝔤𝔥𝔱 </p>
+          <p class="text-center mt-4 mr-3" id="date-copy">𝟸𝟶𝟸𝟶-𝟸𝟶𝟷𝟿</p>
+
+                </div>
+        
+        <div class="col-md-4 ly5" id="info"  > 
+          <h2 class="text-center"> ＮａｓｓＴｒｉｐ  </h2>
+         <br>
+         
+          <p class="text-center">  
+            On NassTrip to connect  
+            with fans,  share  <p class="text-center"> your sounds, and grow your 
+            audience. </p> <p class="text-center"> What are you waiting for?.</p> <p class="text-center" > localisation/tunisia</p>
+          <p class="text-center">   TEL:9371083.</p>
+           
+        </footer>
+
+             <!-----------------------------------------------------social media sidebar--------------------------------------->
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <!-- The social media icon bar -->
+    <div id="icon">
+      <a href="https://www.facebook.com/kalb.kbirfesed" class="facebook"><i class="fa fa-facebook"></i></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox" class="google"><i class="fa fa-google"></i></a>
+      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      
+    </div> 
+       
+        </div>
+      
+
+</body>
+  </html>
