@@ -46,6 +46,7 @@ ul > li > a {
 #logo {
   width: 20rem;
   height: 20rem;
+  margin-left: -11px;
 }
 
 /*-------------------------------section-albums---------------------------*/

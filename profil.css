@@ -30,13 +30,24 @@ ul > li > a {
 #pump {
   width: 13rem;
   height: 13rem;
-  margin-top: -130px;
-  margin-left: 21px;
+  margin-top: -330px;
+  margin-right: -31px;
 }
 
 /*-------------------------------------vertical line---------------------------------*/
 .vl {
   border-left: 2px solid rgb(255, 255, 255);
-  height: 1020px;
-  margin-left: -140px;
+  height: 870px;
+  margin-left: -120px;
+}
+
+#vl2 {
+  margin-left: 160px;
+}
+
+.centered {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
