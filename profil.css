@@ -35,20 +35,20 @@ ul > li > a {
 }
 .centered {
   position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*------------------------------------Name- posintion over image---------------------------------------*/
+.centered2 {
+  position: absolute;
   top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/*------------------------------------Name----------------------------------------*/
-.centered2 {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/*-------------------------------------vertical line---------------------------------*/
+/*-------------------------------------lines---------------------------------*/
 .vl {
   border-left: 2px solid rgb(255, 255, 255);
   height: 870px;
@@ -58,7 +58,7 @@ ul > li > a {
 #vl2 {
   margin-left: 130px;
 }
-
+/*---------------------------------footer------------------------------*/
 .flex-container {
   display: flex;
   background-color: rgb(0, 0, 0);
@@ -67,9 +67,4 @@ ul > li > a {
 
 .flex-container > div {
   background-color: rgb(0, 0, 0);
-}
-
-#message {
-  background-color: black;
-  border: none;
 }
